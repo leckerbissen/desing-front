@@ -1,0 +1,80 @@
+.services {
+
+    &__header {
+        position: relative;
+    }
+
+    &__header::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 4px;
+        background-color: #AB9FF8;
+        top: -20px;
+        left: 46%;
+        right: 50%;
+    }
+
+    &__text {
+        font-size: 16px;
+        max-width: 700px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-column-gap: 56px;
+        grid-row-gap: 56px;
+        grid-template-rows: repeat(9, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        margin-top: 40px;
+    }
+
+    &__wrap > div {
+        max-height: 560px;
+        max-height: 562px;
+        border-radius: 48px;
+        border: none;
+        box-shadow: 0px 9px 31px 0px rgba(23, 22, 93, 0.06);
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding: 64px 50px;
+    }
+
+    &__item-frst {
+        grid-area: 1 / 1 / 5 / 3;
+    }
+
+    &__item-scnd {
+        grid-area: 2 / 3 / 6 / 5;
+    }
+
+    &__item-thrd {
+        grid-area: 5 / 1 / 9 / 3;
+    }
+
+    &__item-frth {
+        grid-area: 6 / 3 / 10 / 5;
+    }
+
+    &__icon {
+        width: 207px;
+        height: 207px;
+        margin: 0 auto;
+    }
+
+    &__name {
+        margin-top: 40px;
+    }
+
+    &__desc {
+        margin-top: 14px;
+
+    }
+
+    &__btn {
+        margin: 64px 0 340px 40%;
+    }
+}

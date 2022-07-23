@@ -1,0 +1,28 @@
+@mixin dark-button {
+    background-color: $dark-blue;
+    padding: 35px 57px;
+    min-width: 104px;
+    color: white;
+    border-radius: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-size: 20px;
+    border: none;
+}
+
+@mixin  light-button {
+    background-color: white;
+    padding: 35px 57px;
+    min-width: 104px;
+    color: $dark-blue;
+    box-shadow: 0px 4px 14px 0px rgba(56, 57, 84, 0.1);
+    border: none;
+    border-radius: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    font-size: 20px;
+}

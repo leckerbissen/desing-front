@@ -1,0 +1,44 @@
+.about {
+    background-color: $beige;
+    padding-top: 340px;
+
+    &__wrap-frst, &__wrap-scnd {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+    }
+
+    &__wrap-frst {
+        margin-right: -62px;
+    }
+
+    &__wrap-scnd {
+        margin-left: -62px;
+        padding-bottom: 340px;
+    }
+
+    &__header {
+        position: relative;
+        text-align: left;
+        margin-top: 115px;
+    }
+
+    &__header::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 4px;
+        top: -32px;
+        background-color: #AB9FF8;
+    }
+
+    &__text {
+        text-align: left;
+    }
+
+    &__text-more {
+        padding-top: 100px;
+        text-align: left;
+        padding-bottom: 30px;
+    }
+}

@@ -1,0 +1,71 @@
+.process {
+    padding-top: 364px;
+
+    &__img {
+        max-width: 280px;
+        max-height: 280px;
+        margin-right: 32px;
+    }
+
+    &__header {
+        position: relative;
+    }
+
+    &__header::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 4px;
+        background-color: #AB9FF8;
+        top: -20px;
+        left: 46%;
+        right: 50%;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 38px;
+        max-width: 700px;
+        margin: 0 auto;
+        margin-top: 13px;
+        margin-bottom: 48px;
+    }
+
+    &__wrap {
+        margin-bottom: 71px;
+    }
+
+    &__item {
+        padding: 86px 72px;
+        border: none;
+        border-radius: 48px;
+        box-shadow: 0px 2px 12px 0px rgba(20, 20, 43, 0.08);
+        max-width: 1034px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__item::after {
+        position: absolute;
+        content: url('../../images/arrow.png');
+        text-align: center;
+        padding-top: 10px;
+        width: 88px;
+        height: 88px;
+        border-radius: 20px;
+        background-color: $dark-blue;
+        right: -163px;
+    }
+
+    &__name, &__desc {
+        text-align: left;
+    }
+
+    &__btn {
+        margin-left: 42%;
+        margin-bottom: 340px;
+    }
+}

@@ -1,0 +1,21 @@
+.benefits {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 119px;
+    padding-bottom: 340px;
+
+    &__numbers {
+        font-size: 94px;
+        line-height: 103px;
+    }
+
+    &__numbers > span {
+        color: #AB9FF8;
+        font-weight: 700;
+    }
+
+    &__desc {
+        font-weight: 700;
+        line-height: 26px;
+    }
+}

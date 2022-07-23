@@ -1,0 +1,17 @@
+.banner {
+    padding-top: 284px;
+    max-width: 859px;
+
+    &__text {
+        text-align: left;
+        padding: 38px 0 32px;
+        font-size: 16px;
+        line-height: 38px;
+        max-width: 700px;
+    }
+
+    &__btn-contact {
+        margin-right: 28px;
+        margin-bottom: 354px;
+    }
+}

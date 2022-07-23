@@ -1,0 +1,67 @@
+.article {
+    background-color: $beige;
+
+    &__main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 364px;
+    }
+
+    &__header {
+        position: relative;
+        text-align: left;
+    }
+
+    &__header::before {
+        position: absolute;
+        content: '';
+        width: 100px;
+        height: 4px;
+        top: -32px;
+        background-color: #AB9FF8;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 38px;
+        margin-top: 13px;
+        max-width: 581px;
+        text-align: left;
+        margin-bottom: 40px;
+    }
+
+    &__wrap {
+        display: flex;
+        flex: row;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        max-width: 632px;
+    }
+
+    &__name, &__date {
+        text-align: left;
+        max-width: 518px;
+    }
+
+    &__name {
+        margin-top: 36px;
+        margin-bottom: 18px;
+    }
+
+    &__date {
+        font-size: 20px;
+        line-height: 22px;
+        margin-bottom: 345px;
+    }
+
+    &__btn {
+        max-height: 92px;
+        margin-top: 80px;
+    }
+
+}
