@@ -1,4 +1,23 @@
 .services {
+    position: relative;
+
+    &__img-1, &__img-2 {
+        position: absolute;
+    }
+
+    &__img-1 {
+        left: 87.16%;
+        right: -13.27%;
+        top: -90px;
+        height: 286px;
+    }
+
+    &__img-2 {
+        left: -9.44%;
+        right: 82.4%;
+        top: 1067px;
+        height: 343px;
+    }
 
     &__header {
         position: relative;

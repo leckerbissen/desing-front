@@ -1,6 +1,37 @@
 .banner {
     padding-top: 284px;
     max-width: 859px;
+    position: relative;
+
+    &__img-1, &__img-2, &__img-3, &__img-4 {
+        position: absolute;
+    }
+
+    &__img-1 {
+        left: -6.94%;
+        right: 77.08%;
+        top: 875px;
+        height: 392px;
+    }
+
+    &__img-2 {
+        left: 46.39%;
+        right: 31.39%;
+        top: -50px;
+    }
+
+    &__img-3 {
+        left: 87.03%;
+        top: 338px;
+        height: 468px;
+    }
+
+    &__img-4 {
+        left: -4.1%;
+        right: 85.35%;
+        top: 242px;
+        height: 268px;
+    }
 
     &__text {
         text-align: left;

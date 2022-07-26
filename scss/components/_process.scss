@@ -1,5 +1,22 @@
 .process {
     padding-top: 364px;
+    position: relative;
+
+    &__png-1, &__png-2 {
+        position: absolute;
+    }
+
+    &__png-1 {
+        height: 364px;
+        top: 379px;
+        right: 0;
+    }
+
+    &__png-2 {
+        height: 331px;
+        bottom: 280px;
+        left: 0;
+    }
 
     &__img {
         max-width: 280px;
@@ -50,7 +67,7 @@
 
     &__item::after {
         position: absolute;
-        content: url('../../images/arrow.png');
+        content: url('../images/arrow.png');
         text-align: center;
         padding-top: 10px;
         width: 88px;

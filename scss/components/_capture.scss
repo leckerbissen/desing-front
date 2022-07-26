@@ -1,6 +1,29 @@
 .capture {
     background-color: $dark-blue;
     padding-top: 264px;
+    position: relative;
+
+    &__png-1, &__png-2, &__png-3 {
+        position: absolute;
+    }
+
+    &__png-1 {
+        height: 371px;
+        top: 36px;
+        left: 44%
+    }
+
+    &__png-2 {
+        height: 745px;
+        top: 114px;
+        right: 1.5%;
+    }
+
+    &__png-3 {
+        height: 343px;
+        bottom: -1.5%;
+        left: 33%;
+    }
 
     
     &__header, &__text {

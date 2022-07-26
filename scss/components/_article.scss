@@ -1,5 +1,22 @@
 .article {
     background-color: $beige;
+    position: relative;
+
+    &__png-1, &__png-2 {
+        position: absolute;
+    }
+
+    &__png-1 {
+        height: 421px;
+        top: 0;
+        left: -0.5%;
+    }
+
+    &__png-2 {
+        height: 380px;
+        bottom: 0;
+        right: -0.5%;
+    }
 
     &__main {
         display: flex;

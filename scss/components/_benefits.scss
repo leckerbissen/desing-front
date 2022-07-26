@@ -6,12 +6,12 @@
 
     &__numbers {
         font-size: 94px;
-        line-height: 103px;
+        color: #AB9FF8;
+        font-weight: 700;
     }
 
     &__numbers > span {
-        color: #AB9FF8;
-        font-weight: 700;
+        line-height: 103px;
     }
 
     &__desc {

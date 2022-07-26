@@ -1,6 +1,23 @@
 .about {
     background-color: $beige;
     padding-top: 340px;
+    position: relative;
+
+    &__png-1, &__png-2 {
+        position: absolute;
+    }
+
+    &__png-1 {
+        left: 40.56%;
+        top: 194px;
+        height: 241px;
+    }
+
+    &__png-2 {
+        left: 22.32%;
+        bottom: 172px;
+        height: 299px;
+    }
 
     &__wrap-frst, &__wrap-scnd {
         display: flex;

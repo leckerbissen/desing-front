@@ -1,4 +1,19 @@
 .portfolio {
+    position: relative;
+
+    &__png-1, &__png-2 {
+        position: absolute;
+    }
+
+    &__png-1 {
+        top: 251px;
+        left: -2%;
+    }
+
+    &__png-2 {
+        bottom: 432px;
+        right: -1%;
+    }
 
     &__header {
         margin-top: 364px;
