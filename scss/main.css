@@ -950,16 +950,8 @@ p {
   margin-bottom: 84px;
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .portfolio__img {
-    max-width: 100%;
-  }
-}
-
-@media (max-width: 767px) {
-  .portfolio__img {
-    max-width: 100%;
-  }
+.portfolio__img {
+  max-width: 100%;
 }
 
 .portfolio__name {
@@ -1000,6 +992,12 @@ p {
 
 .portfolio__btn-contact {
   margin-right: 28px;
+}
+
+@media (max-width: 767px) {
+  .portfolio__btn-contact {
+    padding: 10px;
+  }
 }
 
 .capture {
@@ -1115,6 +1113,7 @@ p {
     width: 60%;
     height: auto;
     top: 10%;
+    right: 15%;
   }
 }
 
@@ -1320,6 +1319,10 @@ p {
   }
 }
 
+.article__img {
+  width: 100%;
+}
+
 .article__header {
   position: relative;
   text-align: left;
@@ -1372,6 +1375,10 @@ p {
     padding-bottom: 60px;
     margin-bottom: 350px;
   }
+}
+
+.article__wrap a {
+  text-decoration: none;
 }
 
 .article__item {

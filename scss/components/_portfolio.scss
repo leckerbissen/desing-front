@@ -106,14 +106,7 @@
     }
 
     &__img {
-
-        @include tablet {
-            max-width: 100%;
-        }
-
-        @include mobile {
-            max-width: 100%;
-        }
+        max-width: 100%;
     }
 
     &__name {
@@ -143,5 +136,9 @@
 
     &__btn-contact {
         margin-right: 28px;
+
+        @include mobile {
+            padding: 10px;
+        }
     }
 }
