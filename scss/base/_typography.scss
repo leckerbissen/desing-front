@@ -12,6 +12,10 @@ h2 {
     letter-spacing: 0em;
     text-align: center;
     font-size: 72px;
+
+    @include mobile {
+        font-size: 56px;
+    }
 }
 
 h3 {

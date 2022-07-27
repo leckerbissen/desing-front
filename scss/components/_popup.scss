@@ -1,0 +1,112 @@
+.popup.active {
+        opacity: 100;
+        pointer-events: all;
+        transition: 0.5s all;
+        z-index: 100;
+    }
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s all;
+    
+    &__form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        background: #fff;
+        width: 400px;
+        padding: 80px;
+        transition: 0.5s all;
+    }
+
+    &-close {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        right: 5%;
+        top: 5%;
+        background-color: $dark-blue;
+        border-radius: 8px;
+        cursor: pointer;
+        border: none;
+    }
+
+    &-close:hover {
+        background: #fff;
+        transition: 0.5s all;
+        border: 2px solid $dark-blue;
+    }
+
+    &-close::before {
+        font-family: 'FontAwesome';
+        content: "\f00d";
+        color: white;
+        font-size: 10px;
+    }
+
+    &-close:hover::before {
+        font-family: 'FontAwesome';
+        content: "\f00d";
+        font-size: 10px;
+        color: $dark-blue;
+    }
+    
+    &__form input {
+        height: 45px;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #cfd0d3;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    &__form input:focus {
+        border-bottom: 1px solid $dark-blue;
+    }
+    
+    &__form input:focus {
+        color: $dark-blue;
+    }
+    
+    &__form textarea {
+        resize: none;
+        width: 100%;
+        height: 150px;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #cfd0d3;
+        font-size: 18px;
+        padding-top: 5px;
+    }
+    
+    &__form textarea:focus {
+        border-bottom: 1px solid $dark-blue;
+    }
+    
+    &__form textarea:focus {
+        color: $dark-blue;
+    }
+    
+    &__form-btn {
+        width: 100%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        font-size: 18px;
+        background: $dark-blue;
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: 0.5s all;
+    }
+}

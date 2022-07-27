@@ -5,6 +5,10 @@
 
     &__png-1, &__png-2, &__png-3 {
         position: absolute;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__png-1 {
@@ -17,6 +21,10 @@
         height: 745px;
         top: 114px;
         right: 1.5%;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__png-3 {
@@ -34,6 +42,11 @@
 
     &__header {
         position: relative;
+
+        @include mobile {
+            font-size: 50px;
+            line-height: 51px;
+        }
     }
 
     &__header::before {
@@ -47,7 +60,6 @@
 
     &__text {
         font-size: 16px;
-        line-height: 38px;
     }
 
     &__btn {

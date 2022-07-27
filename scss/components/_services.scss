@@ -1,8 +1,16 @@
 .services {
     position: relative;
 
+    @include mobile {
+        margin-top: 200px;
+    }
+
     &__img-1, &__img-2 {
         position: absolute;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__img-1 {
@@ -10,6 +18,10 @@
         right: -13.27%;
         top: -90px;
         height: 286px;
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__img-2 {
@@ -32,6 +44,10 @@
         top: -20px;
         left: 46%;
         right: 50%;
+
+        @include mobile {
+            left: 36%;
+        }
     }
 
     &__text {
@@ -48,6 +64,16 @@
         grid-template-rows: repeat(9, 1fr);
         grid-template-columns: repeat(4, 1fr);
         margin-top: 40px;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     &__wrap > div {
@@ -60,6 +86,17 @@
         justify-content: center;
         flex-direction: column;
         padding: 64px 50px;
+
+        @include tablet {
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 40px 10px;
+        }
+
+        @include mobile {
+            padding: 30px 10px;
+        }
     }
 
     &__item-frst {
@@ -82,6 +119,11 @@
         width: 207px;
         height: 207px;
         margin: 0 auto;
+
+        @include tablet {
+            width: 150px;
+            height: 150px;
+        }
     }
 
     &__name {
@@ -91,9 +133,25 @@
     &__desc {
         margin-top: 14px;
 
+        @include tablet {
+            font-size: 18px;
+            line-height: 28px;
+            max-width: 350px;
+            margin: 0 auto;
+        }
     }
 
     &__btn {
         margin: 64px 0 340px 40%;
+
+        @include tablet {
+            margin-left: 30%;
+            margin-bottom: 60px;
+        }
+
+        @include mobile {
+            margin-left: 12%;
+            margin-bottom: 60px;
+        }
     }
 }

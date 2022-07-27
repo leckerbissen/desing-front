@@ -34,6 +34,10 @@ let wrapObjs = [
                 images: "<img class='article__png-1' src='./js/images/article-1.png' /><img class='article__png-2' src='./js/images/article-2.png' />"
         },
 
+        {
+                wrap: document.querySelector('.contacts__wrap'),
+                images: "<img class='contacts__png-1' src='./js/images/contacts-1.png' /><img class='contacts__png-2' src='./js/images/contacts-2.png' /><img class='contacts__png-3' src='./js/images/contacts-3.png' />"
+        }
 
 ]
 

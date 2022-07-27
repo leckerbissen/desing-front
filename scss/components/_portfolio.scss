@@ -3,6 +3,14 @@
 
     &__png-1, &__png-2 {
         position: absolute;
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__png-1 {
@@ -18,6 +26,14 @@
     &__header {
         margin-top: 364px;
         position: relative;
+
+        @include tablet {
+            margin-top: 200px;
+        }
+
+        @include mobile {
+            margin-top: 100px;
+        }
     }
 
     &__header::before {
@@ -29,6 +45,11 @@
         top: -20px;
         left: 46%;
         right: 50%;
+        
+
+        @include mobile {
+            left: 38%;
+        }
     }
 
     &__text {
@@ -36,7 +57,6 @@
         margin: 0 auto;
         margin-bottom: 40px;
         font-size: 16px;
-        line-height: 38px;
         max-width: 700px;
     }
 
@@ -46,10 +66,26 @@
         grid-column-gap: 54px;
         grid-row-gap: 94px;
         display: grid;
+
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
     }
 
     &__item-frst, &__item-scnd, &__item-thrd, &__item-frth {
         max-width: 631px;
+
+        @include tablet {
+            margin: 0 auto;
+        }
     }
 
     &__item-frst {
@@ -69,6 +105,17 @@
         margin-bottom: 84px;
     }
 
+    &__img {
+
+        @include tablet {
+            max-width: 100%;
+        }
+
+        @include mobile {
+            max-width: 100%;
+        }
+    }
+
     &__name {
         text-align: left;
         padding-top: 30px;
@@ -84,6 +131,14 @@
         flex-direction: row;
         justify-content: center;
         margin-bottom: 340px;
+
+        @include tablet {
+            margin-bottom: 100px;
+        }
+
+        @include mobile {
+            margin-bottom: 60px;
+        }
     }
 
     &__btn-contact {

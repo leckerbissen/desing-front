@@ -2,12 +2,31 @@
     display: flex;
     justify-content: space-between;
     margin-top: 119px;
-    padding-bottom: 340px;
+    margin-bottom: 340px;
+
+    @include tablet {
+        margin-bottom: 100px;
+    }
+
+    @include mobile {
+        flex-direction: column;
+        margin-bottom: 60px;
+        margin-top: 40px;
+        padding-bottom: 0;
+    }
 
     &__numbers {
         font-size: 94px;
         color: #AB9FF8;
         font-weight: 700;
+
+        @include tablet {
+            font-size: 76px;
+        }
+
+        @include mobile {
+            margin-top: 40px;
+        }
     }
 
     &__numbers > span {

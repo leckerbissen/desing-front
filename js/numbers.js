@@ -8,7 +8,6 @@ let updateNumbers = function onScroll(){
 
         }
         numbersElem.forEach(elem => {
-            console.log(elem)
             let start = +elem.innerHTML;
             let end = +elem.dataset.max;
             if (start < end) {

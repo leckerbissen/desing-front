@@ -14,8 +14,8 @@
 
     &__png-2 {
         height: 380px;
-        bottom: 0;
-        right: -0.5%;
+        bottom: 169px;
+        right: 0%;
     }
 
     &__main {
@@ -23,6 +23,15 @@
         flex-direction: row;
         justify-content: space-between;
         padding-top: 364px;
+
+        @include tablet {
+            padding-top: 200px;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            padding-top: 200px;
+        }
     }
 
     &__header {
@@ -41,7 +50,6 @@
 
     &__text {
         font-size: 16px;
-        line-height: 38px;
         margin-top: 13px;
         max-width: 581px;
         text-align: left;
@@ -52,12 +60,37 @@
         display: flex;
         flex: row;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            padding-bottom: 60px;
+            margin-bottom: 350px;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         max-width: 632px;
+
+        @include tablet {
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 300px;
+        }
+
+        @include mobile {
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+            z-index: 1;
+        }
     }
 
     &__name, &__date {
@@ -73,12 +106,31 @@
     &__date {
         font-size: 20px;
         line-height: 22px;
-        margin-bottom: 345px;
+        margin-bottom: 523px;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        @include mobile {
+            margin-bottom: 0;
+        }
     }
 
     &__btn {
         max-height: 92px;
         margin-top: 80px;
+
+        @include tablet {
+            padding-top: 27px;
+            margin-top: 0;
+        }
+
+        @include mobile {
+            padding-top: 27px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
     }
 
 }

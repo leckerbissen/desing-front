@@ -3,6 +3,10 @@
     max-width: 859px;
     position: relative;
 
+    @include mobile {
+        padding-top: 100px;
+    }
+
     &__img-1, &__img-2, &__img-3, &__img-4 {
         position: absolute;
     }
@@ -12,18 +16,34 @@
         right: 77.08%;
         top: 875px;
         height: 392px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__img-2 {
         left: 46.39%;
         right: 31.39%;
         top: -50px;
+
+        @include mobile {
+            display: none;
+        }
     }
 
     &__img-3 {
         left: 87.03%;
         top: 338px;
         height: 468px;
+
+        @include mobile{
+            display: none;
+        }
+
+        @include tablet {
+            display: none;
+        }
     }
 
     &__img-4 {
@@ -33,16 +53,42 @@
         height: 268px;
     }
 
+    &__header {
+        @include tablet {
+            font-size: 80px;
+            line-height: 86px;
+        }
+
+        @include mobile {
+            line-height: 42px;
+            font-size: 40px;
+        }
+    }
+
     &__text {
         text-align: left;
         padding: 38px 0 32px;
         font-size: 16px;
-        line-height: 38px;
         max-width: 700px;
+
+        @include mobile {
+            line-height: 24px;
+        }
     }
 
     &__btn-contact {
         margin-right: 28px;
         margin-bottom: 354px;
+
+        @include mobile {
+            margin-bottom: 20px;
+            margin-right: 0;
+        }
+    }
+
+    &__btn-portfolio {
+         @include mobile {
+             padding: 35px 30px;
+         }
     }
 }

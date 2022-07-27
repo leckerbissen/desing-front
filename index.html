@@ -6,26 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./scss/main.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 
 <body>
+    <div class="popup">
+        <form class="popup__form">
+            <button type="button" class="popup-close"></button>
+            <input class="popup__form-input" placeholder="Name" type="text">
+            <input class="popup__form-input" placeholder="E-mail" type="email">
+            <button type="submit" class="popup__form-btn button-dark">Send</button>
+        </form>
+    </div>
     <div class="first-wrap">
         <header class="header content">
             <img class="header__logo" src="./images/logo.svg" alt="logo" />
-            <div class="header__menu">
-                <p>Home</p>
-                <p>About</p>
-                <p>Portfolio</p>
-                <p>Pages</p>
+            <button class="header__mobile-button"><i class="fa fa-solid fa-bars"></i></button>
+            <div class="header__menu-mobile">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contacts</a>
             </div>
-            <button class="header__button button-dark">Contact us</button>
+            <div class="header__menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Portfolio</a>
+                <a href="#">Contacts</a>
+            </div>
+            <button class="header__button button-dark popup-btn" type="button">Contact us</button>
         </header>
         <div class="banner content">
             <h1 class="banner__header">We’re a 3D design agency from <br> Los Angeles, CA</h1>
             <p class="banner__text">Elit aliquam quisque cras vitae sit viverra purus phasellus eget conse risus cursus
                 ultricies sed turpis a adipiscing.</p>
-            <button class="banner__btn-contact button-dark">Contact us</button>
+            <button class="banner__btn-contact button-dark popup-btn">Contact us</button>
             <button class="banner__btn-portfolio button-light">Browse portfolio</button>
         </div>
     </div>
@@ -134,7 +149,7 @@
             </div>
         </div>
         <div class="portfolio__wrap-btn">
-            <button class="portfolio__btn-contact button-dark">Contact us</button>
+            <button class="portfolio__btn-contact button-dark popup-btn">Contact us</button>
             <button class="portfolio__btn-browse button-light">Browse portfolio</button>
         </div>
     </div>
@@ -144,7 +159,7 @@
             <h2 class="capture__header">Have a project? Get in touch today</h2>
             <p class="capture__text">Elit aliquam quisque cras vitae sit viverra purus phasellus eget conse risus cursus
                 ultricies sed turpis a adipiscing.</p>
-            <button class="capture__btn button-light">Get in touch</button>
+            <button class="capture__btn button-light popup-btn">Get in touch</button>
         </div>
     </div>
     <div class="process">
@@ -161,16 +176,36 @@
                         commodo proin interdum.</p>
                 </div>
             </div>
+            <div class="process__item invisible">
+                <img class="process__img" src="./images/process.png" alt="number" />
+                <div>
+                    <h3 class="process__name">2. Point 2</h3>
+                    <p class="process__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+                        dolores vitae atque hic dolor adipisci laborum nisi omnis architecto. Repellendus omnis
+                        doloremque unde porro non. Illo voluptates possimus dolorem architecto.</p>
+                </div>
+            </div>
+            <div class="process__item invisible">
+                <img class="process__img" src="./images/process.png" alt="number" />
+                <div>
+                    <h3 class="process__name">3. Third Slide</h3>
+                    <p class="process__desc">Tempus vitae mi purus velit et et rhoncus placerat et lobortis lacinia
+                        congue etiam felis aliquam ina non consectetur amet cursus quam sit sociis lacus elementum urna
+                        commodo proin interdum.</p>
+                </div>
+            </div>
         </div>
-        <button class="process__btn button-dark">Contact us</button>
+        <button type="button" class="process__btn-slide"><i class="fa-solid fa-arrow-right"></i></button>
+        <button type="button" class="process__btn button-dark popup-btn">Contact us</button>
     </div>
     <div class="article">
         <div class="content">
             <div class="article__main">
                 <div>
-                <h2 class="article__header">Our articles</h2>
-                <p class="article__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non ullamcorper sed
-                    sagittis augu.</p>
+                    <h2 class="article__header">Our articles</h2>
+                    <p class="article__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non ullamcorper
+                        sed
+                        sagittis augu.</p>
                 </div>
                 <button class="article__btn button-light">Browse all articles</button>
             </div>
@@ -178,60 +213,69 @@
                 <div class="article__item">
                     <img class="article__img" src="./images/article1.jpeg" alt="graphic" />
                     <h4 class="article__name">Why is 3D changing the game for marketing teams around the globe</h3>
-                    <p class="article__date">April 19, 2022</p>
+                        <p class="article__date">April 19, 2022</p>
                 </div>
                 <div class="article__item">
                     <img class="article__img" src="./images/article2.jpeg" />
                     <h4 class="article__name">10 benefits of creating 3d animated videos for your business</h3>
-                    <p class="article__date">April 19, 2022</p>
+                        <p class="article__date">April 19, 2022</p>
                 </div>
             </div>
         </div>
     </div>
-     <div class="contacts">
-         <div class="contacts__wrap">
-        <h2 class="contacts__header">Let’s work together</h2>
-        <div class="contacts___btn">
-        <button class="contacts__btn-email button-dark">contact@designroom.com</button>
-        <button class="contacts__btn-phone button-light">+1 (414) 840 - 3207</button>
-    </div>
-    </div>
+    <div class="contacts">
+        <div class="contacts__wrap">
+            <h2 class="contacts__header">Let’s work together</h2>
+            <div class="contacts___btn">
+                <button class="contacts__btn-email button-dark">contact@designroom.com</button>
+                <button class="contacts__btn-phone button-light">+1 (414) 840 - 3207</button>
+            </div>
+        </div>
     </div>
     </div>
     <footer class="footer">
         <div class="footer__wrap content">
-        <div class="footer__info info-block">
-            <img class="info-block__img" src="./images/logo-white.svg" alt="logo"/>
-            <p class="info-block__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non ullamcorper sed sagittis augu dolor consectur drakgon.</p>
-            <div class="footer__info-block__icons">
-                <img class="info-block__icon" src="./images/whatsapp.svg" alt="social-logo"/>
-                <img class="info-block__icon" src="./images/telegram.svg" alt="social-logo"/>
-                <img class="info-block__icon" src="./images/instagram.svg" alt="social-logo"/>
-                <img class="info-block__icon" src="./images/linked.svg" alt="social-logo">
+            <div class="footer__info info-block">
+                <img class="info-block__img" src="./images/logo-white.svg" alt="logo" />
+                <p class="footer__info-block__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non ullamcorper
+                    sed sagittis augu dolor consectur drakgon.</p>
+                <div class="footer__info-block__icons">
+                    <img class="info-block__icon" src="./images/whatsapp.svg" alt="social-logo" />
+                    <img class="info-block__icon" src="./images/telegram.svg" alt="social-logo" />
+                    <img class="info-block__icon" src="./images/instagram.svg" alt="social-logo" />
+                    <img class="info-block__icon" src="./images/linked.svg" alt="social-logo">
+                </div>
+            </div>
+            <div class="footer__nav">
+                <ul class="footer__nav-tec"> Technologу
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">SASS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+                <ul class="footer__nav-tools">Tools
+                    <li><a href="#">VSCode</a></li>
+                    <li><a href="#">GitHub</a></li>
+                    <li><a href="#">Fork</a></li>
+                </ul>
+                <ul class="footer__nav-res"> Resources
+                    <li><a href="#">Figma</a></li>
+                    <li><a href="#">IconFinder</a></li>
+                    <li><a href="#">Font Awesome</a></li>
+                </ul>
             </div>
         </div>
-        <div class="footer__nav">
-            <ul class="footer__nav-tec"> Technologу
-                <li>HTML</li>
-                <li>SASS</li>
-                <li>JavaScript</li>
-            </ul>
-            <ul class="footer__nav-tools">Tools
-                <li>VScode</li>
-                <li>GitHub (Pages)</li>
-                <li>Fork</li>
-            </ul>
-            <ul class="footer__nav-res"> Resources
-                <li>Figma</li>
-                <li>Iconfinder</li>
-            </ul>
-        </div>
-    </div>
         <div class="footer__copy">
             <p>Copyright © Designroom X | Designed by BRIX Templates - Powered by Webflow</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+        integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="./js/objects.js"></script>
     <script type="text/javascript" src="./js/numbers.js"></script>
+    <script type="text/javascript" src="./js/process-slider.js"></script>
+    <script type="text/javascript" src="./js/popup.js"></script>
+    <script type="text/javascript" src="./js/buttons.js"></script>
+    <script type="text/javascript" src="./js/mobile-menu.js"></script>
 </body>
+
 </html>
