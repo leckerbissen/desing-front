@@ -17,7 +17,7 @@
     &__png-1 {
         height: 364px;
         top: 379px;
-        right: 0;
+        right: 10%;
 
         @include tablet {
             top: 0;
@@ -108,19 +108,19 @@
         position: absolute;
         width: 88px;
         height: 88px;
-        right: 10%;
+        right: 0%;
         top: 50%;
         background-color: hsl(244, 59%, 28%);
         border-radius: 20px;
 
         @include tablet {
             top: 35%;
-            right: 0%;
         }
 
         @include mobile {
-            top: 38%;
+            top: 32%;
             right: 1%;
+            opacity: 80%;
         }
     }
 

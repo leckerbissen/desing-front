@@ -24,15 +24,15 @@
             <button class="header__mobile-button"><i class="fa fa-solid fa-bars"></i></button>
             <div class="header__menu-mobile">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contacts</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contacts</a>
             </div>
             <div class="header__menu">
                 <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Portfolio</a>
-                <a href="#">Contacts</a>
+                <a href="#about">About</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contacts">Contacts</a>
             </div>
             <button class="header__button button-dark popup-btn" type="button">Contact us</button>
         </header>
@@ -41,7 +41,7 @@
             <p class="banner__text">Elit aliquam quisque cras vitae sit viverra purus phasellus eget conse risus cursus
                 ultricies sed turpis a adipiscing.</p>
             <button class="banner__btn-contact button-dark popup-btn">Contact us</button>
-            <button class="banner__btn-portfolio button-light">Browse portfolio</button>
+            <a href="#portfolio" rel="nofollow"><button class="banner__btn-portfolio button-light">Browse portfolio</button></a>
         </div>
     </div>
     <div class="benefits content">
@@ -94,7 +94,7 @@
         </div>
         <button class="services__btn button-light">Browse services</button>
     </div>
-    <div class="about content">
+    <div class="about content" id="about">
         <div class="about__wrap-frst">
             <div>
                 <h2 class="about__header">About us</h2>
@@ -122,7 +122,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio content">
+    <div class="portfolio content" id="portfolio">
         <h2 class="portfolio__header">Our portfolio</h2>
         <p class="portfolio__text">Elit aliquam quisque cras vitae sit viverra purus phasellus eget conse risus cursus
             ultricies sed turpis a adipiscing.</p>
@@ -150,7 +150,7 @@
         </div>
         <div class="portfolio__wrap-btn">
             <button class="portfolio__btn-contact button-dark popup-btn">Contact us</button>
-            <button class="portfolio__btn-browse button-light">Browse portfolio</button>
+            <a href="#portfolio"><button class="portfolio__btn-browse button-light">Browse portfolio</button></a>
         </div>
     </div>
     </div>
@@ -227,8 +227,8 @@
         <div class="contacts__wrap">
             <h2 class="contacts__header">Let’s work together</h2>
             <div class="contacts___btn">
-                <button class="contacts__btn-email button-dark">contact@designroom.com</button>
-                <button class="contacts__btn-phone button-light">+1 (414) 840 - 3207</button>
+                <a href="mailto:contact@designroom.com"><button class="contacts__btn-email button-dark">contact@designroom.com</button></a>
+                <a href="tel:+14148403207"><button class="contacts__btn-phone button-light">+1 (414) 840 - 3207</button></a>
             </div>
         </div>
     </div>
@@ -240,10 +240,10 @@
                 <p class="footer__info-block__text">Enim aliquam pharetra at ut morbi aliquet sit platea eget non ullamcorper
                     sed sagittis augu dolor consectur drakgon.</p>
                 <div class="footer__info-block__icons">
-                    <img class="info-block__icon" src="./images/whatsapp.svg" alt="social-logo" />
-                    <img class="info-block__icon" src="./images/telegram.svg" alt="social-logo" />
-                    <img class="info-block__icon" src="./images/instagram.svg" alt="social-logo" />
-                    <img class="info-block__icon" src="./images/linked.svg" alt="social-logo">
+                    <a href="https://wa.me/89376697814"><img class="info-block__icon" src="./images/whatsapp.svg" alt="social-logo" /></a>
+                    <a href="https://t.me/leckerbissen"><img class="info-block__icon" src="./images/telegram.svg" alt="social-logo" /></a>
+                    <a href="https://instagram.com/leckerbissen"><img class="info-block__icon" src="./images/instagram.svg" alt="social-logo" /></a>
+                    <a href="https://www.linkedin.com/in/iuliia-linkova-a15783246"><img class="info-block__icon" src="./images/linked.svg" alt="social-logo"></a>
                 </div>
             </div>
             <div class="footer__nav">
@@ -258,14 +258,14 @@
                     <li><a href="#">Fork</a></li>
                 </ul>
                 <ul class="footer__nav-res"> Resources
-                    <li><a href="#">Figma</a></li>
+                    <li><a href="https://www.figma.com/file/UAhjg9SdsIeVIGsZ6eCjbd/Designroom?node-id=0%3A1" rel="nofollow">Figma</a></li>
                     <li><a href="#">IconFinder</a></li>
                     <li><a href="#">Font Awesome</a></li>
                 </ul>
             </div>
         </div>
         <div class="footer__copy">
-            <p>Copyright © Designroom X | Designed by BRIX Templates - Powered by Webflow</p>
+            <p>Copyright &copy Designroom X | Designed by BRIX Templates - Powered by Webflow</p>
         </div>
     </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
