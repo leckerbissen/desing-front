@@ -2,7 +2,7 @@
 
 This project made for practising html, sass and JavaScript. The layout has only one page, so here it is.
 
-![Desctop1](./images/screen1.png) ![Desctop2](./images/screen2.png)
+<img src="./images/screen1.png" alt="screenshot" width="500"/> <img src="./images/screen2.png" alt="screenshot" width="500"/>
 
 
 ## Small Features
